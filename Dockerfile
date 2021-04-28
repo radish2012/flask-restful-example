@@ -12,7 +12,7 @@ RUN apk --update add --no-cache libxslt-dev
 RUN apk --update add --no-cache jpeg-dev
 
 ENV  TIME_ZONE Asia/Shanghai
-ENV PIPURL "http://pypi.douban.com/simple"
+ENV PIPURL "http://mirrors.aliyun.com/pypi/simple"
 
 RUN echo "${TIME_ZONE}" > /etc/timezone
 RUN ln -sf /usr/share/zoneinfo/${TIME_ZONE} /etc/localtime
